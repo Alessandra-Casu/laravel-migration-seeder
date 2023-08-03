@@ -2,7 +2,10 @@
 
 @section('contents')
 <h2>Questi sono i nostri treni</h2>
+<h3>ATTENZIONE: oggi è: 2018-04-30</h3>
+
 <table class="table table-striped">
+  
     <thead>
       <tr>
         <th scope="col">Id</th>
@@ -17,7 +20,7 @@
       </tr>
     </thead>
     <tbody>
-        @foreach ($trains as $train)
+        @foreach ($collTrains as $train)
             <tr>
                 <th scope="row">{{$train->id}}</th>
                 <td>{{$train->departure_station}}</td>

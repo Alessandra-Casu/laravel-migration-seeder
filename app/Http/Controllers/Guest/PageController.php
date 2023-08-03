@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Guest;
 
-use Carbon\Carbon;
+
 use App\Models\Train;
 
 use Illuminate\Http\Request;
@@ -23,11 +23,8 @@ class PageController extends Controller
    
     public function today()
     {
-        $today = Carbon::today();
-        // dd($today);
-        $collTrains = Train::where('departure_date', $today)->get();
-        return view('today', [
-            'trains' => $collTrains,
-        ]);
+       $collTrains = Train::where('departure_date', '2018-04-30')->get(); 
+
+       return view('trains', compact('collTrains'));
     }
 }
