@@ -3,6 +3,50 @@
 // background-image: url("../img/jumbotron.png");
 // }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 10%;
+}
+
+main {
+    width: calc(100vh - 30%);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
 h1 {
     color: red;
+}
+
+h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+a,
+li {
+    color: red;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 20%;
+    text-align: center;
+    margin-top: 2.5rem;
 }
